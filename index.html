@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Heyya 👋 </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+<!-- Basic Meta Tags -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Alphonsus God'smercy is a skilled front-end developer specializing in creating stunning and user-friendly websites. Explore his portfolio, projects, and connect through social media.">
+<meta name="keywords" content="Front-end developer, web developer, Alphonsus God'smercy, HTML, CSS, JavaScript, web design, UI/UX, portfolio">
+
+<!-- Open Graph Meta Tags for Social Media -->
+<meta property="og:title" content="Alphonsus God'smercy - Front-End Developer">
+<meta property="og:description" content="Discover the work of Alphonsus God'smercy, a talented front-end developer who excels in crafting beautiful and responsive websites. Visit his portfolio and connect on social media.">
+<meta property="og:image" content="https://img.wapka.io/00eopj.jpg">
+<meta property="og:url" content="https://webdev.wapka.website">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Alphonsus God'smercy - Front-End Developer">
+<meta name="twitter:description" content="Explore the portfolio of Alphonsus God'smercy, a front-end developer with expertise in creating innovative and responsive web designs. Connect via his social profiles.">
+<meta name="twitter:image" content="https://img.wapka.io/00eopj.jpg">
+<meta name="twitter:site" content="@AlphonsusG99048">
+
+<!-- Social Media Links -->
+<meta name="author" content="Alphonsus God'smercy">
+<meta name="twitter:creator" content="@AlphonsusG99048">
+<meta property="og:site_name" content="Alphonsus God'smercy's Portfolio">
+<meta property="profile:github" content="https://github.com/Webdev013">
+<meta property="profile:facebook" content="https://www.facebook.com/profile.php?id=100070151471290">
+<meta property="profile:twitter" content="https://x.com/AlphonsusG99048?t=xazyuKuLGXVO8j01zbyuAw&s=09">
+    <style>
+        body {
+          font-family: "DM Sans", sans-serif;
+        }
+        
+        .intro, .bg {
+            background: #FEE7EF;
+        }
+        
+        .underline {
+            text-decoration: underline;
+        }
+        
+        .logo {
+            font-family: "Playwrite CU", cursive;
+        }
+        
+          .rainbow-text {
+            background: linear-gradient(90deg, purple, #96E6A1, #6FC3DF, #3B82F6);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 3em;
+            font-weight: bold;
+            opacity: 1;
+            transition: opacity 1s ease-in-out; /* Smooth fade transition */
+        }
+        
+        /* Styling for the menu container */
+        .menu-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Hidden menu initially */
+        .menu {
+            display: none;
+            position: absolute;
+            top: -200px;
+            right: 30px;
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 150px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: top 0.3s ease-out, opacity 0.3s ease-out;
+            opacity: 0;
+        }
+
+        /* Menu items */
+        .menu-item {
+            padding: 10px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .menu-item:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Make the menu visible */
+        .show {
+            display: block;
+            top: 10px; /* Adjust top value to drop down */
+            opacity: 1;
+        }
+        
+        .size {
+            width: 80px;
+            height: 80px;
+        }
+        
+        svg {
+            display: inline;
+        }
+        
+        .blue {
+            color: dodgerblue;
+        }
+        
+        .socials {
+            padding: 15px;
+        }
+        
+        .socials svg {
+            width: 35px;
+            height: 35px;
+        }
+    </style>
+  </head>
+<body>
+    <div class="intro p-5"id="intro">
+        <div class="flex items-center justify-between mt-5">
+            <span class="logo text-sm font-semibold"> Webdev <br> Aesthetics ⚡ </span>
+            <span class="underline text-sm"> My Resume <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 20"><g fill="currentColor"><path d="M14.5 14.5v-3.25a.5.5 0 0 1 1 0V15a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V5a.5.5 0 0 1 .5-.5h3.75a.5.5 0 0 1 0 1H5.5v9z"/><path d="M10.354 10.354a.5.5 0 0 1-.708-.708l5-5a.5.5 0 0 1 .708.708z"/><path d="M15.5 8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 1 0z"/><path d="M11.5 5.5a.5.5 0 0 1 0-1H15a.5.5 0 0 1 0 1z"/></g></svg> </span>
+            <div class="menu-container">
+        <span id="menu-toggle" class="underline text-sm cursor-pointer">Menu</span>
+        <div id="menu" class="menu">
+            <div class="menu-item">
+                <a href="#intro"> Intro </a>
+            </div>
+            <div class="menu-item">
+                <a href="#about"> About </a>
+            </div>
+            <div class="menu-item">
+                <a href="#services"> Services </a>
+            </div>
+            <div class="menu-item">
+                <a href="#recent"> Recent work </a>
+            </div>
+            <div class="menu-item">
+                <a href="#features"> Features </a>
+            </div>
+            <div class="menu-item">
+                <a href="#footer"> Footer </a>
+            </div>
+        </div>
+    </div>
+        </div>
+        <div class="main mt-40 text-center">
+            <span class="text-md"> The best dev for </span> <br>
+            <span class="text-4xl font-bold"> Your Ideas. </span> <br> <br>
+            <center>
+                <img src="https://img.wapka.io/00eopc.png" alt="3D nerd boy"class="">
+            </center>
+        </div>
+    </div>
+    
+    <!-- middle section -->
+    
+    <div class="middle p-5 mt-10 text-center"id="services">
+        <span class="text-sm"> Hello. I'm Alphonsus God'smercy. I'm a </span> <br>
+        <span class="text-3xl rainbow-text"id="changing-text"> Website Developer </span>
+    </div>
+    
+    <!-- About me Columns -->
+    
+    <div class="container max-w-4xl mx-auto p-4"id="about">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class=" p-4">
+      <!-- Column 1 Content -->
+      <img src="https://img.wapka.io/00eopd.png" alt="3D Avatar with Tongue pointed out"class="w-90">
+    </div>
+    <div class=" p-4">
+      <!-- Column 2 Content -->
+      I'm not just a front-end developer; I'm the digital Picasso of web design, blending sleek, modern aesthetics with pixel-perfect precision. My secret sauce? Knowing exactly what you want and delivering it with a flair that screams style. From jaw-dropping animations to seamless user experiences, I takes every project and turn it into a masterpiece that not only works but wows.
+      <span class="hidden md:block">
+          I love taking what you want and making it something you'll be proud of, something that feels like it’s truly yours. Every project I work on has to be stylish, modern, and polished because that’s what I stand for. If you're working with me, you're getting more than just a developer; you're getting someone who cares about your brand as much as you do.
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- Qualities -->
+
+<div class="contain bg-indigo-400"id="features">
+    <div class="bg-indigo-800 p-10 mt-10">
+        <span class="text-3xl font-bold text-white"> 
+            <center>
+            Qualities your Site will have,   <span class="block md:hidden"> With Us </span> <span class="hidden md:block"> When we do your Site.     </span>
+            </center>
+        </span>
+    </div>
+    
+    <div class="container max-w-4xl mx-auto p-4">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-5">
+    <div class="bg-pink-500 p-4 rounded-xl hover:shadow-lg border">
+      <center>
+          <img src="https://img.wapka.io/00eopf.jpg" alt="rocket"class="rounded-full shadow-lg size"> <br> <br>
+          <strong class="text-white"> High-speed </strong> <br><br>
+          <span class="text-slate-200"> Your sites are guaranteed to have 100% high speed loads. We optimise them for speedy satisfaction. </span>
+      </center>
+    </div>
+    <div class="bg-violet-500 rounded-xl p-4 hover:shadow-lg border">
+      <center>
+          <img src="https://img.wapka.io/00eopg.jpg" alt="Phone with ads and social"class="rounded-full shadow-lg size"> <br> <br>
+          <strong class="text-white"> Marketing/SEO </strong> <br><br>
+          <span class="text-slate-200"> We deliver you SEO rich sites, meaning your sites get ranked on google search results, ultimately attracting you unique visitors. </span>
+      </center>
+    </div>
+    <div class="bg-cyan-500 rounded-xl hover:shadow-lg p-4 border">
+        <center>
+          <img src="https://img.wapka.io/00eoph.jpg" alt="Stock image"class="rounded-full shadow-lg size"> <br> <br>
+          <strong class="text-white"> Updated Technology </strong> <br><br>
+          <span class="text-slate-200"> Our use of modern technology guarantees your site is upto date on tech. We prioritize your site, ensuring it's healthy and functional. </span>
+      </center>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Recent Projects -->
+
+<div class="contain mt-10"id="recent">
+    <div class="p-5">
+        <span class="text-blue-500"> My work </span> <br>
+        <strong class="text-2xl"> What I've developed. </strong>
+        
+        
+        <center class="mt-5">
+               <div class="container max-w-4xl mx-auto p-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="p-4">
+        <img class="rounded-full size border"src="https://img.wapka.io/00eope.jpg"> <br>
+        <strong class="text-2xl"> TheAiMusic </strong> <br><br>
+        <svg class="inline"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="Dodgerblue" d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0c-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0c59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1M610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3z"/></svg> <a href="https://theaimusic.wapka.co"class="blue"> TheAiMusic </a> <br><br>
+        <span class=""> TheAiMusic is where you vibe to songs made by AI, gathered in a single site dedicated to AI songs. </span>
+    </div>
+    
+    <div class="p-4">
+        <img class="rounded-full size border"src="https://img.wapka.io/00eope.jpg"> <br>
+        <strong class="text-2xl"> MyPocketWeather </strong> <br><br>
+        <svg class="inline"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="Dodgerblue" d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0c-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0c59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1M610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3z"/></svg> <a href="https://webdev.wapka.website/mypocketweather"class="blue"> MyPocketWeather </a> <br><br>
+        <span class=""> Want to know how it feels like in different places in the world all from the comfort of your phone? Click the link 😉 </span>
+    </div>
+    
+    <div class="p-4">
+        <img class="rounded-full size border"src="https://img.wapka.io/00eope.jpg"> <br>
+        <strong class="text-2xl"> EzGraphix </strong> <br><br>
+        <svg class="inline"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="Dodgerblue" d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0c-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0c59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1M610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3z"/></svg> <a href="https://ezgraphix.wapka.co"class="blue"> EzGraphix </a> <br><br>
+        <span class=""> EzGraphic is your one stop for all things Graphics. A specialized part of our group dedicated mainly on getting your Graphics ready and stunning. </span>
+    </div>
+    
+    <div class="p-4">
+        <img class="rounded-full size border"src="https://img.wapka.io/00eope.jpg"> <br>
+        <strong class="text-2xl"> Worship Sound </strong> <br><br>
+        <svg class="inline"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="Dodgerblue" d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0c-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0c59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1M610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3z"/></svg> <a href="https://worshipsound.wapka.co"class="blue"> Worship Sound </a> <br><br>
+        <span class=""> A site we built for a client, with exhilarating vibe for the Gospel and the Word of Faith. </span>
+    </div>
+    
+    <div class="p-4">
+        <img class="rounded-full size border"src="https://img.wapka.io/00eope.jpg"> <br>
+        <strong class="text-2xl"> iPhone Design Clone </strong> <br><br>
+        <svg class="inline"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="Dodgerblue" d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0c-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0c59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1M610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3z"/></svg> <a href="https://webdev.wapka.website/iphone"class="blue"> iPhone Design Clone </a> <br><br>
+        <span class=""> A clone of the high tech famous phone, the iPhone with creative visuals. </span>
+    </div>
+    
+    <div class="p-4">
+        <img class="rounded-full size border"src="https://img.wapka.io/00eope.jpg"> <br>
+        <strong class="text-2xl"> Buddy | Chat App </strong> <br><br>
+        <svg class="inline"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="Dodgerblue" d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0c-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0c59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1M610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3z"/></svg> <a href="https://buddy.wapka.co"class="blue"> Buddy </a> <br><br>
+        <span class=""> Buddy is your goto lightweight chat website. In buddy, you get to connect with different people from totally different places, and, don't worry, your information is not sold to the highest bidder like on other sites. </span> <br><br> <span class="p-2 text-sm text-pink-500"> #dev mode </span>
+    </div>    
+  </div>
+</div>
+        </div>
+    </center>
+</div>
+
+
+<!-- footer -->
+
+<footer class="bg-black text-white mt-10"id="footer">
+    <section class="p-4">
+        <span class="font text-2xl text-center font-bold block"> Webdev Aesthetics ⚡ </span> <br><br>
+        <div class="flex items-center justify-center space-x-4">
+            <a href="tel:+2348039913718"class="text-blue"> Place a call </a> <a href="mailto: godsmercyalphonsus@gmail.com"class="text-blue"> Contact me via mail </a>
+        </div>
+        <div class="socials flex items-center justify-between mt-5 mx-auto max-w-md">
+            
+            <!-- twitter -->
+           <a href="https://x.com/AlphonsusG99048?t=7ESHvh5Goy6tIQluPtYu-Q&s=09">
+<section class="flex justify-center items-center">
+  <button
+    href="/"
+    class="group flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-gray-800 to-black text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      stroke-width="0"
+      fill="currentColor"
+      stroke="currentColor"
+    >
+      <path
+        d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z"
+      ></path>
+    </svg>
+    <span
+      class="absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-10 duration-700"
+    >
+      x
+    </span>
+  </button>
+</section>
+
+           </a> 
+           
+           <!-- Facebook -->
+           
+           <a href="https://www.facebook.com/profile.php?id=100070151471290">
+<section class="flex justify-center items-center">
+  <button
+    class="group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-[#316FF6] text-white font-semibold hover:translate-y-2 transition-all duration-250 hover:from-[#331029] hover:to-[#310413]"
+    href="/"
+  >
+    <svg
+      class="w-5"
+      stroke="currentColor"
+      fill="currentColor"
+      stroke-width="0"
+      viewBox="0 0 448 512"
+      height="1.1em"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
+      ></path>
+    </svg>
+    <span
+      class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 group-hover:text-md group-hover:-translate-y-10 duration-500"
+    >
+      Facebook
+    </span>
+  </button>
+</section>
+           </a>
+           
+           <!-- GitHub -->
+           
+           <a href="https://github.com/Webdev013">
+               
+<section class="flex justify-center items-center">
+  <button
+    class="group flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-gray-800 to-black text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
+    href="/"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 15 15"
+      class="w-5"
+    >
+      <path
+        clip-rule="evenodd"
+        fill-rule="evenodd"
+        fill="currentColor"
+        d="M7.49933 0.25C3.49635 0.25 0.25 3.49593 0.25 7.50024C0.25 10.703 2.32715 13.4206 5.2081 14.3797C5.57084 14.446 5.70302 14.2222 5.70302 14.0299C5.70302 13.8576 5.69679 13.4019 5.69323 12.797C3.67661 13.235 3.25112 11.825 3.25112 11.825C2.92132 10.9874 2.44599 10.7644 2.44599 10.7644C1.78773 10.3149 2.49584 10.3238 2.49584 10.3238C3.22353 10.375 3.60629 11.0711 3.60629 11.0711C4.25298 12.1788 5.30335 11.8588 5.71638 11.6732C5.78225 11.205 5.96962 10.8854 6.17658 10.7043C4.56675 10.5209 2.87415 9.89918 2.87415 7.12104C2.87415 6.32925 3.15677 5.68257 3.62053 5.17563C3.54576 4.99226 3.29697 4.25521 3.69174 3.25691C3.69174 3.25691 4.30015 3.06196 5.68522 3.99973C6.26337 3.83906 6.8838 3.75895 7.50022 3.75583C8.1162 3.75895 8.73619 3.83906 9.31523 3.99973C10.6994 3.06196 11.3069 3.25691 11.3069 3.25691C11.7026 4.25521 11.4538 4.99226 11.3795 5.17563C11.8441 5.68257 12.1245 6.32925 12.1245 7.12104C12.1245 9.9063 10.4292 10.5192 8.81452 10.6985C9.07444 10.9224 9.30633 11.3648 9.30633 12.0413C9.30633 13.0102 9.29742 13.7922 9.29742 14.0299C9.29742 14.2239 9.42828 14.4496 9.79591 14.3788C12.6746 13.4179 14.75 10.7025 14.75 7.50024C14.75 3.49593 11.5036 0.25 7.49933 0.25Z"
+      ></path>
+    </svg>
+    <span
+      class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 group-hover:text-sm group-hover:-translate-y-10 duration-700"
+    >
+      GitHub
+    </span>
+  </button>
+</section>
+
+           </a>
+        </div>
+    </section>
+</footer>
+
+<script>
+    const phrases = ["Website Developer", "Graphics Designer", "Content Creator", "Pencil Artist", "Web3 Enthusiast"];
+    let index = 0;
+    const textElement = document.getElementById("changing-text");
+
+    setInterval(() => {
+        textElement.style.opacity = 0; // fade out
+        setTimeout(() => {
+            index = (index + 1) % phrases.length; // cycle through phrases
+            textElement.textContent = phrases[index];
+            textElement.style.opacity = 1; // fade in
+        }, 1000); // matches the fade-out duration
+    }, 5000); // changes every 4 seconds (3s for display + 1s for fade)
+</script>
+ <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            // Toggle the menu visibility and drop animation
+            if (menu.classList.contains('show')) {
+                menu.classList.remove('show');
+            } else {
+                menu.classList.add('show');
+            }
+        });
+
+        // Optional: Close menu when clicking outside
+        window.addEventListener('click', (event) => {
+            if (!menuToggle.contains(event.target) && !menu.contains(event.target)) {
+                menu.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
