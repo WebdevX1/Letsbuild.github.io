@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black flex items-center justify-center min-h-screen">
+    
+    <!-- home bar -->
+    
+    <div class="rounded-full bg-slate-200 text-slate-200 absolute bottom-5"style="width: 50%; height: 5px">  </div>
+    
+    <div class="w-72 h-96 bg-black rounded-lg p-4 flex flex-col justify-between">
+        <!-- Display -->
+        <input id="display" type="text" class="bg-gray-800 rounded-xl mb-5 text-white text-2xl p-2 text-right outline-none" value="" disabled>
+        
+        <!-- Buttons -->
+        <div class="grid grid-cols-4 gap-2">
+            <!-- First Row -->
+            <button class="bg-gray-800 text-orange-500 text-xl py-3 rounded-full" onclick="clearDisplay()">C</button>
+            <button class="bg-gray-800 text-white text-xl py-3 rounded-full" onclick="appendOperator('÷')">÷</button>
+            <button class="bg-gray-800 text-white text-xl py-3 rounded-full" onclick="appendOperator('×')">×</button>
+            <button class="bg-blue-600 text-white text-xl py-3 rounded-full" onclick="deleteLast()">&#x232B;</button>
+            
+            <!-- Second Row -->
+            <button class="bg-gray-800 text-white text-xl py-3 rounded-full" onclick="appendNumber(7)">7</button>
+            <button class="bg-gray-800 text-white text-xl py-3 rounded-full" onclick="appendNumber(8)">8</button>
+            <button class="bg-gray-800 text-white text-xl py-3 rounded-full" onclick="appendNumber(9)">9</button>
+            <button class="bg-gray-800 text-white text-xl py-3 rounded-full" onclick="appendOperator('-')">-</button>
+            
+            <!-- Third Row -->
+            <button class="bg-gray-800 text-white text-xl py-3 rounded-full" onclick="appendNumber(4)">4</button>
+            <button class="bg-gray-800 text-white text-xl py-3 rounded-full" onclick="appendNumber(5)">5</button>
+            <button class="bg-gray-800 text-white text-xl py-3 rounded-full" onclick="appendNumber(6)">6</button>
+            <button class="bg-gray-800 text-white text-xl py-3 rounded-full" onclick="appendOperator('+')">+</button>
+            
+            <!-- Fourth Row -->
+            <button class="bg-gray-800 text-white text-xl py-3 rounded-full" onclick="appendNumber(1)">1</button>
+            <button class="bg-gray-800 text-white text-xl py-3 rounded-full" onclick="appendNumber(2)">2</button>
+            <button class="bg-gray-800 text-white text-xl py-3 rounded-full" onclick="appendNumber(3)">3</button>
+            <button class="row-span-2 bg-blue-600 text-white text-xl py-3 rounded-full" onclick="calculateResult()">=</button>
+            
+            <!-- Fifth Row -->
+            <button class="bg-gray-800 text-white text-xl py-3 rounded-full" onclick="appendOperator('%')">%</button>
+            <button class="bg-gray-800 text-white text-xl py-3 rounded-full" onclick="appendNumber(0)">0</button>
+            <button class="bg-gray-800 text-white text-xl py-3 rounded-full" onclick="appendDot()">.</button>
+        </div>
+    </div>
+
+    <script>
+        const display = document.getElementById('display');
+
+        function clearDisplay() {
+            display.value = '';
+        }
+
+        function appendNumber(number) {
+            display.value += number;
+        }
+
+        function appendOperator(operator) {
+            // Replace the display value with the actual operator symbols
+            if (operator === '÷') operator = '/';
+            if (operator === '×') operator = '*';
+            display.value += operator;
+        }
+
+        function deleteLast() {
+            display.value = display.value.slice(0, -1);
+        }
+
+        function appendDot() {
+            // Prevent adding more than one decimal point in a number segment
+            const parts = display.value.split(/[\+\-\*\/]/);
+            const currentPart = parts[parts.length - 1];
+            if (!currentPart.includes('.')) {
+                display.value += '.';
+            }
+        }
+
+        function calculateResult() {
+            try {
+                display.value = eval(display.value);
+            } catch (e) {
+                display.value = 'Error';
+            }
+        }
+    </script>
+</body>
+          </html>
